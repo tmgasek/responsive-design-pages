@@ -23,3 +23,19 @@ a {
   background-color: #333333;
   padding: 0.5rem;
 }
+
+.img2,
+.img5 {
+  margin-top: 75px;
+}
+
+@media only screen and (max-width: 768px) {
+  .img5 {
+    margin-top: auto;
+  }
+
+  .img4,
+  .img6 {
+    margin-top: 65px;
+  }
+}

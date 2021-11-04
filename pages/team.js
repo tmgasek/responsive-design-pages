@@ -1,13 +1,23 @@
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Team.module.css';
 
 export default function TeamPage() {
+  const images = [];
+  const roles = [
+    'Developer',
+    'Developer',
+    'Teach Lead',
+    'Technician',
+    'Backend Developer',
+    'Coffee Guy',
+  ];
+  const names = ['Richard', 'Augustina', 'Laslo', 'Liz', 'Schlomo', 'Cas'];
+
   const renderImages = () => {
-    let images = [];
     for (let i = 1; i <= 6; i++) {
       images.push(
-        <div>
-          <div className={`${styles.imgWrapper} ${`img${i}`}`} key={i}>
+        <div key={i}>
+          <div className={`${styles.imgWrapper} ${`img${i}`}`}>
             <Image
               src={`/photo${i}.png`}
               width={476}
@@ -15,9 +25,9 @@ export default function TeamPage() {
               alt="member"
             />
 
-            <p className={styles.role}>Role</p>
+            <p className={styles.role}>{roles[i - 1]}</p>
           </div>
-          <p className={styles.name}>Name</p>
+          <p className={styles.name}>{names[i - 1]}</p>
         </div>
       );
     }

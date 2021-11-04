@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.btn-primary {
+  font-family: inherit;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #333333;
+  padding: 0.5rem;
+}

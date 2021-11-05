@@ -24,6 +24,15 @@
   margin-bottom: 3rem;
 }
 
+.btnPrimary {
+  font-family: inherit;
+  border: none;
+  text-decoration: none;
+  color: white;
+  background-color: #333333;
+  padding: 0.5rem;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     flex-direction: column;

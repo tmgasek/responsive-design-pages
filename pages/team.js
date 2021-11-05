@@ -15,11 +15,13 @@ export default function TeamPage() {
 
   const renderImages = () => {
     for (let i = 1; i <= 6; i++) {
+      let type = `teamPic${i}`;
+
       images.push(
         <div key={i}>
-          <div className={`${styles.imgWrapper} ${`img${i}`}`}>
+          <div className={`${styles.imgWrapper} ${styles[type]}`}>
             <Image
-              src={`/photo${i}.png`}
+              src={`/teamPics/photo${i}.png`}
               width={476}
               height={682}
               alt="member"

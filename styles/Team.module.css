@@ -34,6 +34,11 @@
   margin-top: 0.5rem;
 }
 
+.teamPic2,
+.teamPic5 {
+  margin-top: 75px;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
     font-size: smaller;
@@ -44,5 +49,13 @@
   }
   .grid {
     grid-template-columns: repeat(2, 50%);
+  }
+  .teamPic5 {
+    margin-top: auto;
+  }
+
+  .teamPic4,
+  .teamPic6 {
+    margin-top: 65px;
   }
 }

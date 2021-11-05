@@ -9,7 +9,7 @@ export default function NotFound() {
       <div className={styles.container}>
         <div className={styles.imgDiv}>
           <Image
-            src="/Scarecrow.png"
+            src="/404pics/Scarecrow.png"
             alt="scarecrow"
             width={400}
             height={400}
@@ -22,7 +22,10 @@ export default function NotFound() {
             The page you are looking for might be removed or is temporarily
             unavailable
           </p>
-          <button className="btn-primary" onClick={() => console.log('Hello')}>
+          <button
+            className={styles.btnPrimary}
+            onClick={() => console.log('Hello')}
+          >
             Return home
           </button>
         </div>

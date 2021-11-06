@@ -1,7 +1,9 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { FiMenu } from 'react-icons/fi';
+import { GrClose } from 'react-icons/gr';
+import styles from '../styles/InteriorNavbar.module.css';
 
-import styles from '../styles/Interior.module.css';
 export default function InteriorNav() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,13 +14,17 @@ export default function InteriorNav() {
 
   const menuStyle =
     isOpen === false ? styles.menu : styles.menu + ' ' + styles.active;
+
+  const logoStyle =
+    isOpen === false ? styles.logo : styles.logo + ' ' + styles.active;
   return (
     <>
       <nav className={styles.navbar}>
-        <Link href="#">
-          <a>[THIS INTERIOR]</a>
-        </Link>
-
+        <div className={logoStyle}>
+          <Link href="#">
+            <a>[THIS INTERIOR]</a>
+          </Link>
+        </div>
         <ul className={menuStyle}>
           <li className={styles.navItem}>
             <Link href="#">
@@ -50,10 +56,7 @@ export default function InteriorNav() {
           </li>
         </ul>
         <div className={hamStyle} onClick={() => setIsOpen(!isOpen)}>
-          |||
-          <span className="bar"></span>
-          <span className="bar"></span>
-          <span className="bar"></span>
+          {isOpen ? <GrClose size={24} /> : <FiMenu size={24} />}
         </div>
       </nav>
     </>

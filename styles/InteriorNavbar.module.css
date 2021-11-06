@@ -1,0 +1,61 @@
+.navbar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menu {
+  padding-inline-start: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navItem {
+  margin-left: 6rem;
+}
+
+.navLink {
+  font-size: 1rem;
+}
+
+.logo.active {
+  font-size: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .menu {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    left: -100%;
+    top: 0;
+    justify-content: center;
+    margin-top: 0;
+    flex-direction: column;
+    background-color: #181719;
+
+    transition: 0.3s;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .navItem {
+    margin: 1rem;
+  }
+
+  .hamburger {
+    display: block;
+    z-index: 1001;
+
+    cursor: pointer;
+  }
+}

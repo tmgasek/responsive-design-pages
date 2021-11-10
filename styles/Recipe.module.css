@@ -1,0 +1,45 @@
+.container {
+  margin: 1rem 15%;
+}
+
+.main {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.overview {
+  padding: 1.5rem;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.overviewItem {
+  display: flex;
+  margin: 1rem 0;
+  gap: 10px;
+}
+
+.overviewItem p {
+  margin: 1px;
+  white-space: nowrap;
+}
+
+.overviewItemTxt {
+  color: darkgray;
+  font-size: 0.7rem;
+}
+
+.ingredientList {
+  padding-inline-start: 0;
+}
+
+.instructionList {
+  padding-inline-start: 1rem;
+  list-style: decimal;
+}
+
+.instructionList::marker {
+  color: red;
+}

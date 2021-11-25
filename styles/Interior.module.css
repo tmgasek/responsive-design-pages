@@ -1,12 +1,14 @@
 .container {
-  margin: 0.5rem;
+  margin: 1.5rem 4rem;
   color: white;
 }
 
 .main {
+  max-width: 1440px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: auto;
 }
 
 .textDiv {
@@ -70,13 +72,10 @@
   max-width: 300px;
 }
 
-@media only screen and (min-width: 1440px) {
-  .container {
-    margin: 1.5rem 4rem;
-  }
-}
-
 @media only screen and (max-width: 768px) {
+  .container {
+    margin: 1rem 1rem;
+  }
   .main {
     flex-direction: column;
     align-items: flex-start;
